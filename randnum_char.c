@@ -1,9 +1,7 @@
 /**
  * Referenced from	Derek Molloy	http://www.derekmolloy.ie/
- * @brief   An introductory character driver to support the second article of my series on
- * Linux loadable kernel module (LKM) development. This module maps to /dev/randnumchar and
- * comes with a helper C program that can be run in Linux user space to communicate with
- * this the LKM.
+ * @brief   Create a character device driver as a LKM 
+ * with the read operation that generate and send a random number to the user program.
  */
 
 #include <linux/init.h>           // Macros used to mark up functions e.g. __init __exit
